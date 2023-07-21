@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkedin Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <!-- left navbar -->
+      <div class="navbar-left logo">
+        <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
+
+        <div class="search-box">
+          <img src="./images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <!-- center navbar -->
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="active-page">
+              <img src="./images/home.png" />
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/network.png" /><span>My Network</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="./images/jobs.png" /><span>Job</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/message.png" /><span>Messaging</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/notification.png" /><span
+                >Notifications</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- right navbar -->
+      <div class="navbar-right">
+        <div class="online-indicator">
+          <img src="./images/user-1.png" class="nav-profile-img" />
+        </div>
+      </div>
+
+      <!-- profile dropdown menu -->
+      <div class="profile-dropdown-menu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="./images/user-1.png" />
+            <div>
+              <h3>Rayan Walton</h3>
+              <a href="./profile.html">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="profile-menu-link">
+            <img src="./images/feedback.png" />
+            <p>Give Feedback</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="./images/setting.png" />
+            <p>Settings & Privacy</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="./images/help.png" />
+            <p>Help & Support</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="./images/display.png" />
+            <p>Display & Accessibility</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="./images/logout.png" />
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- main content -->
+    <div class="container">
+      <!-- left sidebar -->
+      <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+          <img src="./images/cover-pic.png" />
+          <div class="profile-info">
+            <img src="./images/user-1.png" />
+            <h1>Rayan Walton</h1>
+            <h3>Web Devloper at Microsoft</h3>
+            <ul>
+              <li>Your profile views <span>52</span></li>
+              <li>Your post views <span>810</span></li>
+              <li>Your connections <span>205</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-profile-link">
+            <a href="#"><img src="./images/items.png" /> My Items</a>
+            <a href="#"><img src="./images/premium.png" /> My Premium</a>
+          </div>
+        </div>
+
+        <!-- activity -->
+        <div class="sidebar-activity">
+          <h3>RECENT</h3>
+          <a href="#"><img src="./images/recent.png" />Web Development</a>
+          <a href="#"><img src="./images/recent.png" />User Interface</a>
+          <a href="#"><img src="./images/recent.png" />Online Learning</a>
+          <a href="#"><img src="./images/recent.png" />Learn Online</a>
+          <a href="#"><img src="./images/recent.png" />Code Better</a>
+          <a href="#"><img src="./images/recent.png" />Group Learning</a>
+          <h3>GROUPS</h3>
+          <a href="#"><img src="./images/group.png" />Web Design Group</a>
+          <a href="#"><img src="./images/group.png" />HTML & CSS Learners</a>
+          <a href="#"
+            ><img src="./images/group.png" />Python & JavaScript Group</a
+          >
+          <a href="#"><img src="./images/group.png" />Learn Coding Online</a>
+          <h3>HASHTAG</h3>
+          <a href="#"><img src="./images/hashtag.png" />webdevelopment</a>
+          <a href="#"><img src="./images/hashtag.png" />userinterface</a>
+          <a href="#"><img src="./images/hashtag.png" />onlinelearning</a>
+          <div class="discover-more-link">
+            <a href="#">Discover More</a>
+          </div>
+        </div>
+
+        <p id="showMoreLink">Show More <b>+</b></p>
+      </div>
+
+      <!-- feed -->
+      <div class="feed">
+        <div class="create-post">
+          <div class="create-post-input">
+            <img src="./images/user-1.png" />
+            <textarea rows="2" placeholder="Write a Post"></textarea>
+          </div>
+          <div class="create-post-links">
+            <ul>
+              <li><img src="./images/photo.png" />Photo</li>
+              <li><img src="./images/video.png" />Video</li>
+              <li><img src="./images/event.png" />Event</li>
+              <li>Post</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sort-by">
+          <hr />
+          <p>
+            Sort by: <span>top <img src="./images/down-arrow.png" /></span>
+          </p>
+        </div>
+
+        <!-- post -->
+        <div class="post">
+          <div class="post-author">
+            <img src="./images/user-3.png" />
+            <div>
+              <h1>Benjamin Leo</h1>
+              <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+            debitis aut distinctio laborum enim alias! Hic placeat, ullam minus
+            odit enim commodi accusamus molestiae quisquam et maxime voluptates,
+            voluptate voluptas.
+          </p>
+          <img src="./images/post-image-1.png" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="./images/thumbsup.png" />
+              <img src="./images/love.png" />
+              <img src="./images/clap.png" />
+              <span class="liked-users">Devilal Singh and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="./images/user-1.png" class="post-activity-user-icon" />
+              <img
+                src="./images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div>
+              <img src="./images/like.png" />
+              <span>Like</span>
+            </div>
+            <div>
+              <img src="./images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div>
+              <img src="./images/share.png" />
+              <span>Share</span>
+            </div>
+            <div>
+              <img src="./images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="./images/user-4.png" />
+            <div>
+              <h1>Clarence George</h1>
+              <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+            debitis aut distinctio laborum enim alias! Hic placeat, ullam minus
+            odit enim commodi accusamus molestiae quisquam et maxime voluptates,
+            voluptate voluptas. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Alias, neque.
+          </p>
+          <img src="./images/post-image-2.png" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="./images/thumbsup.png" />
+              <img src="./images/love.png" />
+              <img src="./images/clap.png" />
+              <span class="liked-users">Devilal Singh and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="./images/user-1.png" class="post-activity-user-icon" />
+              <img
+                src="./images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div>
+              <img src="./images/like.png" />
+              <span>Like</span>
+            </div>
+            <div>
+              <img src="./images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div>
+              <img src="./images/share.png" />
+              <span>Share</span>
+            </div>
+            <div>
+              <img src="./images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="./images/user-5.png" />
+            <div>
+              <h1>Hugh Don</h1>
+              <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+            debitis aut distinctio laborum enim alias! Hic placeat, ullam minus
+            odit enim commodi accusamus molestiae quisquam et maxime voluptates,
+            voluptate voluptas. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Alias, neque. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Ducimus perspiciatis a dolorum velit
+            sed adipisci porro non expedita temporibus labore!
+          </p>
+          <img src="./images/post-image-3.png" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="./images/thumbsup.png" />
+              <img src="./images/love.png" />
+              <img src="./images/clap.png" />
+              <span class="liked-users">Devilal Singh and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="./images/user-1.png" class="post-activity-user-icon" />
+              <img
+                src="./images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div>
+              <img src="./images/like.png" />
+              <span>Like</span>
+            </div>
+            <div>
+              <img src="./images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div>
+              <img src="./images/share.png" />
+              <span>Share</span>
+            </div>
+            <div>
+              <img src="./images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="./images/user-2.png" />
+            <div>
+              <h1>Lucifer Sharma</h1>
+              <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+            debitis aut distinctio laborum enim alias! Hic placeat, ullam minus
+            odit enim commodi accusamus molestiae quisquam et maxime voluptates,
+          </p>
+          <img src="./images/post-image-4.png" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="./images/thumbsup.png" />
+              <img src="./images/love.png" />
+              <img src="./images/clap.png" />
+              <span class="liked-users">Devilal Singh and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="./images/user-1.png" class="post-activity-user-icon" />
+              <img
+                src="./images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div>
+              <img src="./images/like.png" />
+              <span>Like</span>
+            </div>
+            <div>
+              <img src="./images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div>
+              <img src="./images/share.png" />
+              <span>Share</span>
+            </div>
+            <div>
+              <img src="./images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right sidebar -->
+      <div class="right-sidebar">
+        <!-- sidebar news -->
+        <div class="right-sidebar-news">
+          <img src="./images/more.png" class="info-icon" />
+          <h3>Trending News</h3>
+          <a href="#">High demand for skilled manpower</a>
+          <span>1d ago &middot; 10,934 readers</span>
+
+          <a href="#">Careers growing horizontally too</a>
+          <span>1d ago &middot; 1,552 readers</span>
+
+          <a href="#">Less work visa for US, more for UK</a>
+          <span>1d ago &middot; 28,934 readers</span>
+
+          <a href="#">More hiring = higher confidence?</a>
+          <span>1d ago &middot; 8,934 readers</span>
+
+          <a href="#">Gautam Adani is the world's third richest man</a>
+          <span>1d ago &middot; 4,934 readers</span>
+
+          <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <!-- sidebar ad -->
+        <div class="right-sidebar-ad">
+          <small>Ad &middot; &middot; &middot;</small>
+          <p>Master the 5 principles of web designing</p>
+          <div>
+            <img src="./images/user-1.png" />
+            <img src="./images/mi-logo.png" />
+          </div>
+          <b>Brand and Demand in Xiaomi</b>
+          <a href="#" class="link">Learn More</a>
+        </div>
+
+        <div class="sidebar-useful-link">
+          <a href="#">About</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Advertising</a>
+          <a href="#">Get the App</a>
+          <a href="#">More</a>
+
+          <div class="copyright-msg">
+            <img src="./images/logo.png" />
+            <p>Linkedup &#169; 2022. All right reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script>
+      let profileImg = document.querySelector(".nav-profile-img");
+      let dropdownMenu = document.querySelector(".profile-dropdown-menu");
+
+      profileImg.addEventListener("click", () => {
+        dropdownMenu.classList.toggle("open-menu");
+      });
+
+      let showMoreLink = document.getElementById("showMoreLink");
+      let sidebarActivity = document.querySelector(".sidebar-activity");
+      showMoreLink.addEventListener("click", () => {
+        sidebarActivity.classList.toggle("open-recents");
+
+        if (sidebarActivity.classList.contains("open-recents")) {
+          showMoreLink.innerHTML = "Show less <b>-</b>";
+        } else {
+          showMoreLink.innerHTML = "Show more <b>+</b>";
+        }
+      });
+    </script>
+  </body>
+</html>
